@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSIBITO - Interlunium</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="site-header">
+        <nav class="nav-container">
+            <div class="nav-logo">INTERLUNIUM</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">トップページ</a></li>
+                <li><a href="world.html">世界観紹介</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">キャラクター紹介</a>
+                    <ul class="dropdown-content">
+                        <li><a href="hosibito.html">ホシビト</a></li>
+                        <li><a href="sateraito.html">サテライト</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="https://forms.google.com/your-dummy-url" target="_blank" class="btn-lottery">事前抽選</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-title fade-in">
+            <span class="en-title">Cast - HOSIBITO</span>
+            <h2>ホシビト</h2>
+            <p>13の星座と、その傍らに輝く星々の化身たち。</p>
+        </section>
+
+        <div class="character-grid">
+            <!-- キャラクターカードの例 -->
+<a href="character/hosibito/aries.html" class="char-card-link">
+    <div class="char-card fade-in">
+        <div class="char-img-wrapper">
+            <div class="no-img-placeholder">ARIES</div>
+            <div class="char-overlay">
+                <p class="char-description">クリックして詳細を見る</p>
+            </div>
+        </div>
+        <div class="char-info">
+            <span class="constellation-name">Aries</span>
+            <h3>牡羊座のホシビト</h3>
+        </div>
+    </div>
+</a>
+
+            <!-- キャラクター2 -->
+            <div class="char-card fade-in">
+                <div class="char-img-wrapper">
+                    <div class="no-img-placeholder">NO IMAGE</div>
+                    <div class="char-overlay">
+                        <p class="char-description">静かな夜を愛する、優しき星の守護者。</p>
+                    </div>
+                </div>
+                <div class="char-info">
+                    <span class="constellation-name">Taurus</span>
+                    <h3>牡牛座のホシビト</h3>
+                </div>
+            </div>
+
+            <!-- キャラクター3（以下、15人分繰り返す） -->
+            <!-- ... -->
+
+            <!-- ダミーで枠を増やしておきます -->
+            <script>
+                // 実際にはHTMLを直接書くのがSEO的に良いですが、
+                // プレビュー用にJavaScriptでカードを増やしてみます
+                const grid = document.querySelector('.character-grid');
+                for(let i=3; i<=15; i++) {
+                    grid.innerHTML += `
+                    <div class="char-card fade-in">
+                        <div class="char-img-wrapper">
+                            <div class="no-img-placeholder">HOSIBITO ${i}</div>
+                            <div class="char-overlay"><p class="char-description">ホシビトとの15分間の対話をお楽しみください。</p></div>
+                        </div>
+                        <div class="char-info">
+                            <span class="constellation-name">CONSTELLATION</span>
+                            <h3>第${i}のホシビト</h3>
+                        </div>
+                    </div>`;
+                }
+            </script>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Interlunium - VRChat RP Event.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
